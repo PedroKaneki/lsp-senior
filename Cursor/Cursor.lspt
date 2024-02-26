@@ -1,0 +1,20 @@
+/*  Sintaxe:
+Definir Cursor <Nome_Do_Cursor>
+*/
+
+Definir Cursor Cur_E085CLI;
+
+Cur_E085CLI.SQL "SELECT NUMCAD\
+                FROM R034FUN\
+                WHERE R034FUN.NUMEMP = 1";
+
+@--aBRIR CURSOR EXECUTA O COMANDO SLQ @
+
+Cur_E085CLI.AbrirCursor();
+
+
+@--Fechar cursor nao deixa mais os dados da consulta ser manipulados--@
+Cur_E085CLI.FecharCursor()
+
+@--Proximo le o proximo conteudo--@
+Cur_E085CLI.proximo();

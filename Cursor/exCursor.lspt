@@ -1,0 +1,25 @@
+Definir Cursor Cur_E085CLI;
+Definir Alfa aNomCli;
+Definir Alfa aMensagem;
+Definir Alfa aUF;
+
+aNomCli = "";
+aUF = "";
+
+aMensagem = "Não Encontrou o Cliente";
+
+Cur_E085CLI.SQL "SELECT NOMCLI,SIGUFS FROM E085CLI
+                        WHERE CODCLI = 1";
+
+
+Cur_e085CLI.AbrirCursor();
+Se (Cur_E085CLI)
+
+Inicio
+    aNomCli = Cur_e085CLI.NOMCLI;
+    aUF = Cur_E085CLI.SigUfs;
+    aMensagem = "Cliente: " + aNomCli + ",Estado (UF) " + aUF;
+
+Fim;
+
+Mensagem(Retorna,aMensagem);

@@ -1,0 +1,8 @@
+@--Definição de Variaveis--@
+Definir Numero nCodigo;
+Definir Alfa aNome;
+Definir Data dDataCadastro;
+Definir Tabela tMeses[12] = {Alfa aNomeMes[10];Numero nNumeroDias;};
+Definir Cursor Cur_NomeTabela;
+Definir Funcao ftriplo(Numero nValor,Alfa aTexto);
+Definir Lista lCidade;

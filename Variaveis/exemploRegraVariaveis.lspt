@@ -1,0 +1,28 @@
+Definir Alfa aNomeCliente;
+Definir Numero nNumeroPedido;
+
+Definir Numero nTotalPedido;
+
+Definir Data dDataVenda;
+Definir Alfa aNumeroPedido;
+Definir Alfa aTotalPedido;
+Definir Alfa aDataVenda;
+Definir Alfa aMensagem;
+Definir Alfa aComDesconto;
+
+aNomeCliente = "Pedro Vitor";
+nNumeroPedido = 100;
+nTotalPedido = 234.56;
+
+nComDesconto = nTotalPedido * 0.9;
+MontaData(26,02,2024,dDataVenda);
+
+IntParaAlfa(nNumeroPedido,aNumeroPedido);
+
+ConverteMascara(1,nTotalPedido,aTotalPedido,"zzz.zz9,99");
+ConverteMascara(1,nComDesconto,aComDesconto,"zzz.zz9,99");
+ConverteMascara(3,dDataVenda,aDataVenda,"DD/MM/YYYY");
+
+aMensagem = "Pedido:" + aNumeroPedido + ",Cliente: " + aNomeCliente + ", Total Pedido: " + aTotalPedido + ", Com Desconto: " + aComDesconto + "Data Venda : " + aDataVenda;
+
+Mensagem(Retorna,aMensagem);

@@ -1,2 +1,2 @@
-@Serve para comentar apenas uma liha@
+@Serve para comentar apenas uma linha@
 /* para varias linhas*/

@@ -1,0 +1,6 @@
+Definir Alfa aRetorno1;
+Definir Numero nCodCliente;
+Definir Numero nRetorno2;
+Definir Numero nRetorno3;
+EntradaValor("Entrada de dados","Informe o Cliente:",5"ZZZZZZZZ","",50,aRetorno1,nRetorno2,nRetorno3);
+Mensagem(Retorna,aRetorno1);

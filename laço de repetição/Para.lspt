@@ -1,0 +1,29 @@
+/* Sintaxe:
+Para(<valor inicial>;<Condiçao>;<contador>){
+    <executa comando 1>;
+    <executa comando 2>;
+    <executa comando n>;
+};
+*/
+
+@--EXEMPLO--@
+
+Definir Alfa aDiaSemana;
+Definir Numero nDia;
+
+aDiaSemana = "";
+nDia = 0;
+
+Para(i = 1; i <= nDia; i++) {
+    Se (nDia = 1)
+    aDiaSemana = "Segunda-Feira";
+    Senao 
+    Se (nDia = 2){
+        aDiaSemana = "Terça-Feira";
+    }
+    Senao{
+        Pare;
+    };
+    Mensagem(Retorna,aDiaSemana);
+
+}
