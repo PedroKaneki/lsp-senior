@@ -1,0 +1,26 @@
+Definir Cursor Cur_e210EST;
+Definir numero nQtdEst;
+Definir Alfa aQtdEst;
+Definir Alfa aMensagem;
+
+nQtdEst = 0;
+aQtdEst = "";
+aMensagem = "";
+
+
+
+Cur_e210EST.SQL "SELECT QTDEST FROM E210EST \
+                  AND CODPRO ='911'\
+                  AND CODDER = '001'\
+                  AND CODDEP = '002'";
+
+Cur_E210EST.AbrirCursor();
+ Se(Cur_e210EST.Achou){
+  
+   nQtdEst = Cur_e210EST.QTDEST;
+   IntParaAlfa(nQtdEst,aQtdEst);
+   aMensagem = "Quantidade do estoque é " + aQtdEst;
+   };
+   Cur_E210EST.FecharCursor(); 
+  
+  Mensagem(Retorna,aMensagem);

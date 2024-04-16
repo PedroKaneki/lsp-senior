@@ -11,7 +11,10 @@ Cur_E085CLI.SQL "SELECT NUMCAD\
 @--ABRIR CURSOR EXECUTA O COMANDO SLQ--@
 
 Cur_E085CLI.AbrirCursor();
-
+    SE (Cur_E085CLI.Achou)
+        Inicio
+            <Bloco de comandos>
+        Fim;
 
 @--Fechar cursor nao deixa mais os dados da consulta ser manipulados--@
 Cur_E085CLI.FecharCursor()
