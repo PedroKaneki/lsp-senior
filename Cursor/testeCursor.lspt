@@ -1,3 +1,6 @@
+
+@-- Cursor simples utilizando valores fixos --@
+
 Definir Cursor Cur_e210EST;
 Definir numero nQtdEst;
 Definir Alfa aQtdEst;

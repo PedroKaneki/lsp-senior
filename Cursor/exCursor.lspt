@@ -3,13 +3,13 @@ Definir Alfa aNomCli;
 Definir Alfa aMensagem;
 Definir Alfa aUF;
 
-aNomCli = "";
+aNomCli = 1;
 aUF = "";
 
 aMensagem = "Não Encontrou o Cliente";
 
 Cur_E085CLI.SQL "SELECT NOMCLI,SIGUFS FROM E085CLI
-                        WHERE CODCLI = 1";
+                        WHERE CODCLI = : aNomCli";
 
 
 Cur_e085CLI.AbrirCursor();
